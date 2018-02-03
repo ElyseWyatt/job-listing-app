@@ -1,0 +1,15 @@
+body {
+    display: block;
+    margin: 8px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+.page-box {
+    margin: 20px 70px;
+    background-color: #e7e7e7;
+}
+
+h1 {
+    font-size: 14px;
+}
