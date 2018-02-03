@@ -13,3 +13,7 @@ body {
 h1 {
     font-size: 14px;
 }
+
+ul {
+    list-style-type: none;
+}

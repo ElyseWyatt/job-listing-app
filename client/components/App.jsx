@@ -1,8 +1,9 @@
 import React from 'react'
-// import {HashRouter as Router, Route} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 
-import Table from './Table'
-import Submit from './Submit'
+import JobList from './JobList'
+import Form from './Form'
+
 
 
 class App extends React.Component {
@@ -22,11 +23,21 @@ addJob (job) {
 
   render () {
     return (
+      <Router>
       <div className='page-box'>
-        <h1>Hardware Jobs</h1>
-        <Table />
-        <Submit addJob={this.addJob} />
-      </div>
+        <Route exact path='/' render={() => {
+          return (
+            <div>
+            <h1>Hardware Jobs</h1>
+            <JobList jobs={this.state.jobs} />
+            </div>
+          )
+        }} />
+        <Route path='/submit' render={() => {
+          return <Form addJob={this.addJob} />
+        }} />
+        </div>
+      </Router>
     )
     
   }
