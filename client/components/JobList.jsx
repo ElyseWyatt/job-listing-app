@@ -9,7 +9,6 @@ const JobList = props => {
                 return <li key={id}>{topost.job}: {topost.company}</li>
             })}
         </ul>
-        <Link to='/submit'>Submit Job</Link>
         </div>
     )
 }

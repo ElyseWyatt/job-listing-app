@@ -1,14 +1,43 @@
-body {
-    display: block;
-    margin: 8px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
+html {
+    height: 100%;
+    background: linear-gradient(#d32b1b, #ff5c3f);
+    background-repeat: no-repeat;
 }
 
-.page-box {
-    margin: 20px 70px;
-    background-color: #e7e7e7;
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+     
 }
+
+
+/* Grey box for all content */
+
+.page-box {
+    margin: 20px 110px;
+    padding: 5px;
+   
+    background-color: #f5f4fd;
+   
+}
+
+/* Heading box */
+
+.title-nav {
+    display: flex;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #e7e7e7;
+}
+
+.title-spacing {
+    padding: 0px 10px;
+}
+
+
+
 
 h1 {
     font-size: 14px;
@@ -17,3 +46,6 @@ h1 {
 ul {
     list-style-type: none;
 }
+
+
+
