@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-//Job list input
-class Form extends React.Component {
+//This is the separate page for /submit
+class Submit extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
@@ -26,6 +26,7 @@ class Form extends React.Component {
             <form>
                 <div>Job: <input name='job' onChange={this.handleChange} /></div>
                 <div>Company: <input name='company' onChange={this.handleChange} /></div>
+                <div>Link: <input name='url' onChange={this.handleChange} /></div>
                 <button type='button' onClick={() => this.props.addJob(this.state)}>Add Job</button>
             </form>
             <Link to='/'>Home</Link>
@@ -34,4 +35,4 @@ class Form extends React.Component {
     }
 }
 
-export default Form
+export default Submit

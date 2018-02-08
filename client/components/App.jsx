@@ -3,7 +3,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 
 import JobList from './JobList'
-import Form from './Form'
+import Submit from './Submit'
 
 
 
@@ -29,20 +29,33 @@ addJob (job) {
         <Route exact path='/' render={() => {
           return (
             <div>
-              <div className='title-nav'>
-                <div className='title-spacing'>
-                <h4>Hardware Jobs</h4>
+              <div className='nav-box'>
+
+                <div className='link-box'>
+                  <div className='heading'>
+                    <h1>Hardware Jobs</h1>
+                    <p className='blurb'>Current open positions at New Zealand hardware companies.</p>
+                  </div>
                 </div>
-                <div className='title-spacing'>
-                <Link to='/submit'><p>Submit Job</p></Link>
+
+                <div className='link-box'>
+                  <button type='button' button className='button'>
+                    <Link to='/submit'>SUBMIT JOB</Link>
+                  </button>
+                </div>
+
+              </div>
+                
+              <div className='job-box'>
+                <div className='job-padding'>
+                  <p className='job-text'><JobList jobs={this.state.jobs} /></p>
                 </div>
               </div>
-            <JobList jobs={this.state.jobs} />
             </div>
           )
         }} />
         <Route path='/submit' render={() => {
-          return <Form addJob={this.addJob} />
+          return <Submit addJob={this.addJob} />
         }} />
         </div>
       </Router>

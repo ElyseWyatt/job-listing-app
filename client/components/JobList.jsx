@@ -6,7 +6,7 @@ const JobList = props => {
         <div>
         <ul>
             {props.jobs.map((topost, id) => {
-                return <li key={id}>{topost.job}: {topost.company}</li>
+                return <li key={id} className='job-font'>{topost.job}: {topost.company} {topost.url}</li>
             })}
         </ul>
         </div>
@@ -14,3 +14,5 @@ const JobList = props => {
 }
 
 export default JobList
+
+//Put different tags on jobs and companies. 
