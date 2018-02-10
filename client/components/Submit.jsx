@@ -33,9 +33,12 @@ class Submit extends React.Component {
                 </select> */}
                 <div>Region: <input name='region' onChange={this.handleChange} /></div>
                 <div>Job Ad Link: <input name='url' onChange={this.handleChange} /></div>
+                <div className='submit-flex'>
                 <Link to='/'><button type='button' onClick={() => this.props.addJob(this.state)}>ADD JOB</button></Link>
+                <Link to='/'><button type='button' className='home-button'>HOME</button></Link>
+                </div>
             </form>
-            <Link to='/'>Home</Link>
+            
             </div>
         )
     }
