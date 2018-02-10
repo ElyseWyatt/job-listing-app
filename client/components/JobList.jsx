@@ -16,4 +16,3 @@ const JobList = props => {
 
 export default JobList
 
-//Put different tags on jobs and companies. 
