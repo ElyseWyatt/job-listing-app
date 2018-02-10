@@ -4,11 +4,12 @@ import {Link} from 'react-router-dom'
 const JobList = props => {
     return (
         <div>
-        <ul>
-            {props.jobs.map((topost, id) => {
-                return <li key={id} className='job-font'>{topost.job}: {topost.company} {topost.url}</li>
-            })}
-        </ul>
+            <ul className='list-render'>
+                {props.jobs.map((topost, id) => {
+                    return <li key={id} className='job-font'><a href={topost.url}>{topost.job}: {topost.company}</a> <br></br> {topost.region}</li>
+    
+                })}
+            </ul>
         </div>
     )
 }

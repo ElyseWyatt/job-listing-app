@@ -41,6 +41,7 @@ body {
 /* Main heading text */
 h1 {
     font-size: 19px;
+    color: #474c58;
 }
 
 /* Blurb under heading*/
@@ -64,10 +65,22 @@ button {
   }
 
   /* Link text */
-a {
+button a {
     text-decoration: none;
     color: white;
 }
+
+.list-render {
+    text-decoration: none;
+    color: #474c58;
+
+}
+
+a {
+    text-decoration: none;
+    color: #474c58;
+}
+
 /* Job info container */
 .job-box {
     color: #474c58;
@@ -128,4 +141,19 @@ li {
     font-weight: 600;
 }
 
+.submit-title {
+    color: #474c58;
+}
+
+.submit-form {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
 

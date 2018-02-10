@@ -20,14 +20,15 @@ class Submit extends React.Component {
     render () {
         return (
             <div>
-            <h2>
+            <h1>
                Submit Job
-            </h2>
-            <form>
+            </h1>
+            <form className='submit-form'>
                 <div>Job: <input name='job' onChange={this.handleChange} /></div>
                 <div>Company: <input name='company' onChange={this.handleChange} /></div>
-                <div>Link: <input name='url' onChange={this.handleChange} /></div>
-                <button type='button' onClick={() => this.props.addJob(this.state)}>Add Job</button>
+                <div>Region: <input name='region' onChange={this.handleChange} /></div>
+                <div>Job Ad Link: <input name='url' onChange={this.handleChange} /></div>
+                <Link to='/'><button type='button' onClick={() => this.props.addJob(this.state)}>ADD JOB</button></Link>
             </form>
             <Link to='/'>Home</Link>
             </div>
@@ -36,3 +37,5 @@ class Submit extends React.Component {
 }
 
 export default Submit
+
+

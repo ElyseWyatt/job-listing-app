@@ -38,8 +38,8 @@ addJob (job) {
                   </div>
                 </div>
 
-                <div className='link-box'>
-                  <button type='button' button className='button'>
+                <div className='submit-title'>
+                  <button type='button' className='button'>
                     <Link to='/submit'>SUBMIT JOB</Link>
                   </button>
                 </div>
