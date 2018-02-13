@@ -2,8 +2,11 @@ import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 
+
 import JobList from './JobList'
 import Submit from './Submit'
+
+
 
 
 
@@ -22,6 +25,7 @@ addJob (job) {
   })
 }
 
+
   render () {
     return (
       <Router>
@@ -38,7 +42,7 @@ addJob (job) {
                   </div>
                 </div>
 
-                <div className='submit-title'>
+                <div className='submit-box'>
                   <button type='button' className='button'>
                     <Link to='/submit'>SUBMIT JOB</Link>
                   </button>
@@ -51,6 +55,7 @@ addJob (job) {
                   <p className='job-text'><JobList jobs={this.state.jobs} /></p>
                 </div>
               </div>
+              
             </div>
           )
         }} />
