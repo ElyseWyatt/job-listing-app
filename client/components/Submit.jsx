@@ -50,7 +50,6 @@ class Submit extends React.Component {
                     <input name='region' placeholder='Region' onChange={this.handleChange} />
                 </div>
                 <div>
-                    {/* Job Link:  */}
                     <input name='url' placeholder='Full Job Link' onChange={this.handleChange} />
                 </div>
                 <div className='submit-flex'>
@@ -67,14 +66,5 @@ class Submit extends React.Component {
 export default Submit
 
 
-// Add form validation
-// Add default value of https://
-
-
-//How to check if a string includes something
-//if valid, it will return true, if not valid, false
-//Will have to bind isValid function
-
-// str.includes('https://')
 
 
