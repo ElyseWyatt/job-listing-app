@@ -1,13 +1,19 @@
-html {
+/* html {
     height: 100%;
-    background: linear-gradient(to bottom right, #bec2d6, #bec2d6);
     background-repeat: no-repeat;
+    background: linear-gradient(to bottom right, #bec2d6, #bec2d6);
+} */
+
+*{
+    border:0;
+    margin: 0;
 }
 
-
 body {
-    font-family: 'Roboto', sans-serif;;
-     
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #bec2d6, #bec2d6);
+    height: 100%;
+    width: 100%;
 }
 
 /* Contains everything on the page */
@@ -46,9 +52,14 @@ h1 {
     font-weight: 900;
 }
 
+.home-heading {
+    padding: 15px 0 15px 0;
+}
+
 /* Blurb under heading*/
 .blurb {
     font-size: 13px;
+    padding: 0px 0 15px 0;
 }
 
 /* Button content */
@@ -141,7 +152,7 @@ li {
 /* Class in the Job List component for job text */
 .job-font {
     color: #474c58;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -164,7 +175,7 @@ form {
 input {
     width: 100%;
     height: 10px;
-    padding: 17px 5px;
+    padding: 17px 18px;
     margin: 5px 0px 30px -2px;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -207,5 +218,9 @@ input:focus {
 .region-style {
     color: grey;
     font-size: 10px;
+}
+
+.submit-heading {
+    padding: 0 0 15px 0;
 }
 

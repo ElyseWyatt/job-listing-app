@@ -31,12 +31,12 @@ class Submit extends React.Component {
     render () {
         return (
             <div>
-            <h1>
+            <h1 className='submit-heading'>
                Submit Job
             </h1>
             <form className='submit-form'>
                 <div> 
-                    <input name='job' placeholder='Job Title' onChange={this.handleChange} />
+                    <input name='job' placeholder='Title' onChange={this.handleChange} />
                 </div>
                 <div> 
                     <input name='company' placeholder='Company' onChange={this.handleChange} />

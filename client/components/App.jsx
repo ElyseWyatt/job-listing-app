@@ -37,7 +37,7 @@ addJob (job) {
 
                 <div className='link-box'>
                   <div className='heading'>
-                    <h1>Hardware Jobs</h1>
+                    <h1 className='home-heading'>Hardware Jobs</h1>
                     <p className='blurb'>Current open positions at New Zealand hardware companies.</p>
                   </div>
                 </div>
