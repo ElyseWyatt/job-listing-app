@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
+    "knex": "knex",
     "test": "jest --watch --noStackTrace"
   },
   "babel": {
@@ -20,7 +21,11 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "moment": "^2.20.1"
+    "express-jwt": "^5.3.0",
+    "knex": "^0.14.3",
+    "moment": "^2.20.1",
+    "sodium": "^2.0.3",
+    "sqlite3": "^3.1.13"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
