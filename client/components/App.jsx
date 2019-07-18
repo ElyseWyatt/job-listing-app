@@ -38,7 +38,7 @@ addJob (job) {
                 <div className='link-box'>
                   <div className='heading'>
                     <h1 className='home-heading'>Hardware Jobs</h1>
-                    <p className='blurb'>Current open positions at New Zealand hardware companies.</p>
+                    <p className='blurb'>Open positions at New Zealand hardware companies.</p>
                   </div>
                 </div>
 
@@ -49,13 +49,13 @@ addJob (job) {
                 </div>
 
               </div>
-                
+
               <div className='job-box'>
                 <div className='job-padding'>
                   <p className='job-text'><JobList jobs={this.state.jobs} /></p>
                 </div>
               </div>
-              
+
             </div>
           )
         }} />
@@ -65,10 +65,9 @@ addJob (job) {
         </div>
       </Router>
     )
-    
+
   }
 }
 
 
 export default App
-
